@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, Verdana, sans-serif;
+}
+
+header {
+    background: lightblue;
+}
+
+h1, h2 {
+    color: blue;
+}
+
+main {
+    background: lightgray;
+}
+
+p {
+    color: black;
+}

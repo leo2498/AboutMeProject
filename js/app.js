@@ -111,6 +111,8 @@ function question4() {
 
 question4();
 
+function question5(){
+
     // Y/N Question #5
     console.log('Y/N Question #5');
     var youngerThanThirty = prompt('Think I\'m younger than 30?' + 
@@ -120,13 +122,17 @@ question4();
         console.log('User guessed no, not younger than 30:', youngerThanThirty);
     } else if (youngerThanThirty.toLowerCase() === 'yes' || youngerThanThirty.toLowerCase() === 'y') {
             alert('You\'re right, I\'m younger.');
-            console.log('User guessed yes, younger than 30:', youngerThanTwentyFive);
+            console.log('User guessed yes, younger than 30:', youngerThanThirty);
             score++;
             console.log('Score is currently:', score);
     } else {
         alert('Please answer yes/y or no/n. One last question.'); // Gotta handle invalid user input better
         console.log('User\'s answer was invalid:', youngerThanThirty);
     }
+
+}
+
+question5();
 
     // A bonus Y/N question
     console.log('Bonus Y/N question');

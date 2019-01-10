@@ -5,7 +5,6 @@ var score = 0;
 console.log('Score is currently:', score);
 
 var favSubjs = ['German', 'Latin', 'History', 'English lit'];
-    // console.log('Print fav subjects array contents:', favSubjs);
 
 for (var i = 0; i < favSubjs.length; i++) {
     var bestSubjects = 'bestsubjs' + i;

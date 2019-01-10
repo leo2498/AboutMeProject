@@ -24,18 +24,18 @@ function question1() {
         if (willGiveName.toLowerCase() === 'yes' || willGiveName.toLowerCase() === 'y') {
             alert('Ok, thanks!');
             
-            var realName = prompt('What is your name?');
-            var userName = realName;
-            console.log('User\'s name saved as:', userName);
+            // var realName = prompt('What is your name?');
+            // var userName = realName;
+            // console.log('User\'s name saved as:', userName);
 
         } else if (willGiveName.toLowerCase() === 'no' || willGiveName.toLowerCase() === 'n') {
             alert('Ok, no problem!!');
 
             // If user won't give name, create a variable that saves a default anonymous
             // user name to use later when I show the tally of user's correct answers.
-            var fakeName = 'Esteemed User';
-            var userName = fakeName;
-            console.log('User name saved as:', userName);
+            // var fakeName = 'Esteemed User';
+            // var userName = fakeName;
+            // console.log('User name saved as:', userName);
 
         } else {
             alert('Please answer yes/y or no/n in the future.');
@@ -43,23 +43,28 @@ function question1() {
 }
 
  question1();
-    
-// Y/N Question #2
-console.log('Y/N Question #2');
-var willPlay = prompt('Do ya want to try to guess my age?' +
-' Answer "yes" or "no."' +
-' (The answers "y" or "n" are also acceptable.)' );
-console.log('User wants to play:', willPlay);
-if (willPlay.toLowerCase() === 'yes' || willPlay.toLowerCase() === 'y') {
-    alert('Ok, let\'s play!');
-} else if (willPlay.toLowerCase() === 'no' || willPlay.toLowerCase() === 'n') {
-    alert('Ok, no offense taken! ;)');
-} else {
-    alert('Sorry, the answer is not valid. Please answer yes/y or no/n.');
-}
 
-if (willPlay.toLowerCase() === 'yes' || willPlay.toLowerCase() === 'y') { 
-    // ^ Is there a more concise way to check if user has answered yes?
+function question2() {
+    
+    // Y/N Question #2
+    console.log('Y/N Question #2');
+    var willPlay = prompt('Do ya want to try to guess my age?' +
+    ' Answer "yes" or "no."' +
+    ' (The answers "y" or "n" are also acceptable.)' );
+    console.log('User wants to play:', willPlay);
+    if (willPlay.toLowerCase() === 'yes' || willPlay.toLowerCase() === 'y') {
+        alert('Ok, let\'s play!');
+    } else if (willPlay.toLowerCase() === 'no' || willPlay.toLowerCase() === 'n') {
+        alert('Ok, no offense taken! ;)');
+    } else {
+        alert('Sorry, the answer is not valid. Please answer yes/y or no/n.');
+    }
+
+    if (willPlay.toLowerCase() === 'yes' || willPlay.toLowerCase() === 'y') { 
+        // ^ Is there a more concise way to check if user has answered yes?
+    }
+}
+question2();
 
     // Y/N Question #3
     console.log('Y/N Question #3');
@@ -78,6 +83,12 @@ if (willPlay.toLowerCase() === 'yes' || willPlay.toLowerCase() === 'y') {
         alert('Please answer yes/y or no/n. Try another question.'); // Gotta handle invalid user input better
         console.log('User\'s answer was invalid:', youngerThanTwenty);
     }
+
+
+
+
+
+
 
     // Y/N Question #4
     console.log('Y/N Question #4');
@@ -131,7 +142,7 @@ if (willPlay.toLowerCase() === 'yes' || willPlay.toLowerCase() === 'y') {
 
     alert('Thanks for playing!');
     console.log('Game over!');
-}
+
 
 // Question #6
 console.log('Question #6');
@@ -208,10 +219,10 @@ while (guessesRemaining > 0) {
         }
 }
 
-console.log('Confirm final username:', userName);
+// console.log('Confirm final username:', userName);
 console.log('User\'s score was:', score);
 
 // User won't be able to score all possible
 // points if they opt out of guessing my age.
-alert(userName + ', your total score was ' + score + ' out of 6 possible points.');
-console.log('End of program!');
+// alert(userName + ', your total score was ' + score + ' out of 6 possible points.');
+// console.log('End of program!');

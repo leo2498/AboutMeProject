@@ -154,85 +154,91 @@ question5();
     console.log('Game over!');
 
 
+
 // Question #6
 console.log('Question #6');
+function question6 () {
 
-var myFavNum = 7;
-for (var i = 0; i < 4; i++) {
-    var userNumGuess = prompt('Guess what my favorite number is!');
-    console.log('User\'s guess', userNumGuess);
-    var numGuessAsNumber = parseInt(userNumGuess);
-    console.log(numGuessAsNumber);
+    var myFavNum = 7;
+    for (var i = 0; i < 4; i++) {
+        var userNumGuess = prompt('Guess what my favorite number is!');
+        console.log('User\'s guess', userNumGuess);
+        var numGuessAsNumber = parseInt(userNumGuess);
+        console.log(numGuessAsNumber);
 
-    if (numGuessAsNumber === myFavNum) {
-        alert('Correct answer! Good guess!');
-        score++;
-        console.log('Score is currently:', score);
-        break;
-    } else {
-        if (numGuessAsNumber < myFavNum) {
-            console.log('User guessed too low');
-            // Tell user too low
-            alert('Too low!');
-        } else if (numGuessAsNumber > myFavNum) {
-            console.log('User guessed too high');
-            // Tell user too high
-            alert('Too high!');
-        } else {
-            console.log('User gave invalid input');
-            // Tell user input submitted was invalid and how to submit right input
-            alert('Answer is invalid. Please enter a number.');
-        }
-    }
-
-    if (i === (4 - 1)) {
-        alert('You are out of guesses!');
-    }
-}
-
-// Question #7
-console.log('Question #7');
-
-// Declare string array with possible answers
-var rightAnswers = ['Nebraska', 'Michigan', 'South Carolina'];
-var guessesRemaining = 6;
-
-while (guessesRemaining > 0) {
-    var userStateGuess = prompt('Can you guess a state I have lived in besides Washington');
-    console.log('User\'s state guess: ', userStateGuess);
-
-    for (var i = 0; i < rightAnswers.length; i++) {    
-        if (rightAnswers[i].toUpperCase() === userStateGuess.toUpperCase()) {
-            alert('You are correct! The possible correct answers were: ' +
-            rightAnswers[0] + ', ' + rightAnswers[1] + ', and ' + rightAnswers[2]);
-            guessesRemaining = 0;
+        if (numGuessAsNumber === myFavNum) {
+            alert('Correct answer! Good guess!');
             score++;
             console.log('Score is currently:', score);
             break;
+        } else {
+            if (numGuessAsNumber < myFavNum) {
+                console.log('User guessed too low');
+                // Tell user too low
+                alert('Too low!');
+            } else if (numGuessAsNumber > myFavNum) {
+                console.log('User guessed too high');
+                // Tell user too high
+                alert('Too high!');
+            } else {
+                console.log('User gave invalid input');
+                // Tell user input submitted was invalid and how to submit right input
+                alert('Answer is invalid. Please enter a number.');
+            }
+        }
+
+        if (i === (4 - 1)) {
+            alert('You are out of guesses!');
         }
     }
-
-    // Inspiration from Billy B. about control
-    // flow of the two 'if' statements below
-    if (guessesRemaining > 0) { 
-        alert('Wrong, try again!');
-    }
-
-    guessesRemaining--;
-    console.log('Guesses remaining:', guessesRemaining);
-        
-    if (guessesRemaining === 0) {
-        alert('You are out of guesses! The possible correct answers were: ' +
-        rightAnswers[0] + ', ' + rightAnswers[1] + ', and ' + rightAnswers[2]);
-        // guessesRemaining = 0;
-        break;
-        }
 }
+question6();
 
-// console.log('Confirm final username:', userName);
-console.log('User\'s score was:', score);
+// Question #7
+console.log('Question #7');
+function question7() {
 
-// User won't be able to score all possible
-// points if they opt out of guessing my age.
-// alert(userName + ', your total score was ' + score + ' out of 6 possible points.');
-// console.log('End of program!');
+    // Declare string array with possible answers
+    var rightAnswers = ['Nebraska', 'Michigan', 'South Carolina'];
+    var guessesRemaining = 6;
+
+    while (guessesRemaining > 0) {
+        var userStateGuess = prompt('Can you guess a state I have lived in besides Washington');
+        console.log('User\'s state guess: ', userStateGuess);
+
+        for (var i = 0; i < rightAnswers.length; i++) {    
+            if (rightAnswers[i].toUpperCase() === userStateGuess.toUpperCase()) {
+                alert('You are correct! The possible correct answers were: ' +
+                rightAnswers[0] + ', ' + rightAnswers[1] + ', and ' + rightAnswers[2]);
+                guessesRemaining = 0;
+                score++;
+                console.log('Score is currently:', score);
+                break;
+            }
+        }
+
+        // Inspiration from Billy B. about control
+        // flow of the two 'if' statements below
+        if (guessesRemaining > 0) { 
+            alert('Wrong, try again!');
+        }
+
+        guessesRemaining--;
+        console.log('Guesses remaining:', guessesRemaining);
+            
+        if (guessesRemaining === 0) {
+            alert('You are out of guesses! The possible correct answers were: ' +
+            rightAnswers[0] + ', ' + rightAnswers[1] + ', and ' + rightAnswers[2]);
+            // guessesRemaining = 0;
+            break;
+            }
+    }
+}
+question7();
+    // console.log('Confirm final username:', userName);
+    console.log('User\'s score was:', score);
+
+    // User won't be able to score all possible
+    // points if they opt out of guessing my age.
+    // alert(userName + ', your total score was ' + score + ' out of 6 possible points.');
+    // console.log('End of program!');

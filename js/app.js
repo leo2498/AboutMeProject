@@ -185,7 +185,9 @@ while (guessesRemaining > 0) {
         }
     }
 
-    if (guessesRemaining > 0) {
+    // Inspiration from Billy B. about control
+    // flow of the two 'if' statements below
+    if (guessesRemaining > 0) { 
         alert('Wrong, try again!');
     }
 

@@ -15,29 +15,35 @@ for (var i = 0; i < favSubjs.length; i++) {
 
 // Y/N Question #1
 console.log('Y/N Question #1');
-var willGiveName = prompt('Are you willing to tell me your name? ' +
-'Please answer yes or no (y or n are also acceptable).');
-    console.log('Is user willing to give name?', willGiveName);
-    if (willGiveName.toLowerCase() === 'yes' || willGiveName.toLowerCase() === 'y') {
-        alert('Ok, thanks!');
-        
-        var realName = prompt('What is your name?');
-        var userName = realName;
-        console.log('User\'s name saved as:', userName);
 
-    } else if (willGiveName.toLowerCase() === 'no' || willGiveName.toLowerCase() === 'n') {
-        alert('Ok, no problem!!');
+function question1() {
 
-        // If user won't give name, create a variable that saves a default anonymous
-        // user name to use later when I show the tally of user's correct answers.
-        var fakeName = 'Esteemed User';
-        var userName = fakeName;
-        console.log('User name saved as:', userName);
+    var willGiveName = prompt('Are you willing to tell me your name? ' +
+    'Please answer yes or no (y or n are also acceptable).');
+        console.log('Is user willing to give name?', willGiveName);
+        if (willGiveName.toLowerCase() === 'yes' || willGiveName.toLowerCase() === 'y') {
+            alert('Ok, thanks!');
+            
+            var realName = prompt('What is your name?');
+            var userName = realName;
+            console.log('User\'s name saved as:', userName);
 
-    } else {
-        alert('Please answer yes/y or no/n in the future.');
-    }
+        } else if (willGiveName.toLowerCase() === 'no' || willGiveName.toLowerCase() === 'n') {
+            alert('Ok, no problem!!');
 
+            // If user won't give name, create a variable that saves a default anonymous
+            // user name to use later when I show the tally of user's correct answers.
+            var fakeName = 'Esteemed User';
+            var userName = fakeName;
+            console.log('User name saved as:', userName);
+
+        } else {
+            alert('Please answer yes/y or no/n in the future.');
+        }
+}
+
+ question1();
+    
 // Y/N Question #2
 console.log('Y/N Question #2');
 var willPlay = prompt('Do ya want to try to guess my age?' +

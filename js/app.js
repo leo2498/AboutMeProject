@@ -66,6 +66,8 @@ function question2() {
 }
 question2();
 
+function question3() {
+
     // Y/N Question #3
     console.log('Y/N Question #3');
     var youngerThanTwenty = prompt('Do you think I\'m younger than 20?' +
@@ -83,12 +85,11 @@ question2();
         alert('Please answer yes/y or no/n. Try another question.'); // Gotta handle invalid user input better
         console.log('User\'s answer was invalid:', youngerThanTwenty);
     }
+}
 
+question3();
 
-
-
-
-
+function question4() {
 
     // Y/N Question #4
     console.log('Y/N Question #4');
@@ -106,6 +107,9 @@ question2();
         alert('Please answer yes/y or no/n. Here\'s another question.'); // Gotta handle invalid user input better
         console.log('User\'s answer was invalid:', youngerThanTwentyFive);
     }
+}
+
+question4();
 
     // Y/N Question #5
     console.log('Y/N Question #5');
